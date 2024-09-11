@@ -18,7 +18,7 @@
                             <form action="{{ route('RECOUPE.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group " width="100%">
-                                    <label for="Reference_Bloc">Référence Bloc</label>
+                                    <label for="Reference_Bloc">Référence du Bloc</label>
                                     <input type="text"  name =" Reference_Bloc" class="form-control">
                                     @if ($errors->any('Reference_Bloc'))
                                         <span class="text-danger">{{ $errors->first('Reference_Bloc') }}</span>
@@ -44,7 +44,7 @@
                                         name="commentaire_D" value="{{old('commentaire_D')}}">
                                 </div>
                                 <div class="form-group">
-                                    <label for="degree_reinclusion">Degré de Réinclusion</label>
+                                    <label for="degree_reinclusion">Degrée de Réinclusion</label>
                                     <input type='numeric' class="form-control" id="degree_reinclusion"
                                         placeholder="degree Reinclusion" name="degree_reinclusion" value="{{old('degree_reinclusion') }}">
 
@@ -53,7 +53,7 @@
                                     @endif
                                 </div>
                                 <div class="form-group">
-                                    <label for="nombre_recoupe ">Nombre Recoupe</label>
+                                    <label for="nombre_recoupe ">Nombre de Recoupe</label>
                                     <input type='numeric' class="form-control" id="nombre_recoupe"
                                         placeholder="Nombre Recoupe" name="nombre_recoupe"  value="1">
 

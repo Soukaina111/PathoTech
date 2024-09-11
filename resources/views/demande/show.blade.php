@@ -1,11 +1,7 @@
 @extends('adminlte::page')
-
 @section('title', 'Detail Piece Operatoire')
-
 @section('content_header')
-
     <h1>Détails Recoupe</h1>
-
 @stop
 
 @section('content')

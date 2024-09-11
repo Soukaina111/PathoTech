@@ -1,13 +1,7 @@
 @extends('adminlte::page')
-
 @section('title', 'Mes demandes')
-
 @section('content_header')
-
-
-
 @stop
-
 @section('content')
     <style>
         .search-box {
@@ -130,12 +124,9 @@
                                         </td>
                                         
                                         <td class="text-center">{{date("d-m-Y", strtotime($dem->Date_Demande))}}</td>
-                                        {{-- <td class="text-center">{{ $dem->Nombre_Recoupe ?? '//' }} </td> --}}
-                                        {{-- <td class="text-center">{{ $dem->Degree_Reinclusion ?? '//' }} </td> --}}
                                         <td class="text-center">{{ $dem->Type_Coloration ?? '//' }} </td>
                                         <td class="text-center">{{ $dem->Panel_Marquage ?? '//' }} </td>
                                         <td class="text-center">{{ $dem->tests?? '//' }} </td>
-                                        {{-- <td class="text-center">{{ $dem->Commentaire_D }}</td> --}}
                                         @if ($dem->Status != 'Validée')
                                             <td class="status">{{ $dem->Status }}</td>
                                         @else

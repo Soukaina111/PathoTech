@@ -1,18 +1,10 @@
-
 @extends('adminlte::page')
 
 @section('title', 'BIOMOL')
 
 @section('content_header')
 
-
-
-
 @stop
-
-
-
-
 
 @section('content')
 <!DOCTYPE html>

@@ -1,30 +1,10 @@
 @extends('adminlte::page')
-
 @section('title', 'Détails Recoupe')
-
 @section('content_header')
-
 @stop
-
 @section('content')
 @section('content')
 <html>
-    {{-- <style>
-    
-      * {
-        box-sizing: border-box;
-      }
-
-   {
-        position:absolute;
-  top:0px;
-  right:0px;
-  bottom:0px;
-  left:0px;
-     
-      }
-
-    </style> --}}
 <br>
 <body>
     <h1 class="text-center">Recoupe</h1>

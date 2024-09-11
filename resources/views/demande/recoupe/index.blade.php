@@ -159,28 +159,13 @@ $(document).ready(function(){
                 <div class="row">
                     @if (Auth::user()->role == 'Medecin')
                     <a href="{{ route('RECOUPE.create') }}" class="btn btn-outline-primary col-sm-4" role="button">Nouvelle Demande</a>
-                    {{-- <a href="{{ route('RECOUPE.index') }}" class="btn btn-outline-secondary col-sm-3" role="button">Demandes Récentes</a> --}}
                     <a href="{{ route('RECOUPE.valide') }}" class="btn btn-outline-success col-sm-4" role="button">Demandes Validées</a>
                     <a href="{{ route('RECOUPE.attente') }}" class="btn btn-outline-danger col-sm-4" role="button">Demandes En Attente</a>
-                    {{-- <div class="col-sm-6"><h2><b>RECOUPE</b></h2></div> --}}
                    @else
-                   {{-- <a href="{{ route('RECOUPE.index') }}" class="btn btn-outline-secondary col-sm-4" role="button">Demandes Récentes</a> --}}
                     <a href="{{ route('RECOUPE.valide') }}" class="btn btn-outline-success col-sm-6" role="button">Demandes Validées</a>
                     <a href="{{ route('RECOUPE.attente') }}" class="btn btn-outline-danger col-sm-6" role="button">Demandes En Attente</a>
-
                    @endif
-                        {{-- <div class="search-box">
-                            <i class="material-icons">&#xE8B6;</i>
-                            <input type="text" class="form-control" placeholder="Search&hellip;">
-                        </div> --}}
-                    </div>
-                {{-- <div class="col-sm-6">
-                    <button type="button" class="btn btn-success btn-xs">Add <span class="glyphicon glyphicon-plus"></span></button>
-                     <button type="button" class="btn btn-default btn-sm">
-                      <span class="glyphicon glyphicon-export"></span> Export
-                    </button> --}}
-               
-                {{-- </div> --}}
+                    </div> 
             </div>
             <br>
             <br>
@@ -189,47 +174,23 @@ $(document).ready(function(){
                 <thead>
                    
                     <tr>
-                        {{-- @if ((Auth::user()->role == 'Medecin')) --}}
-                        {{-- <th>#</th> --}}
                         <th>Référence Bloc </th>
                         <th>Type</th>
                         <th>Nombre Recoupe </th>
-                        {{-- <th>Medecin Demandant</th> --}}
                         <th>Date Demande</th>
-                        {{-- <th>Degre Reinclusion</th> --}}
                         <th>Commentaire</th>
-                        {{-- <th>Recherche Position</i></th>
                         <th>Valider Technique</i></th> --}}
-                        {{-- <th>Action</th> --}}
-                        {{-- @endif --}}
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($demandes as $dem)
                     <tr>
-                        {{-- <td>{{$dem->id}}</td> --}}
                         <td><p class="font-weight-bold"> {{ $dem->Reference_Bloc ?? ' Reference introuvable' }}</p>
                         </td>
                         <td>{{ $dem->Type_Ref }}</td>
-                        
                         <td>{{ $dem->Nombre_Recoupe }}</td>
-                     
                         <td>{{date("d-m-Y", strtotime($dem->Date_Demande))}}</td>
-                        {{-- <td>{{ $dem->Degree_Reinclusion }}</td> --}}
                         <td>{{ $dem->Commentaire_D }}</td>
-                        {{-- <td><button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModalCenter">
-                          Accéder
-                        </button> </td> --}}
-                        {{-- <td> --}}
-                        {{-- <div class="text-center">
-                            <input type="checkbox" class="text-center" name="brand">
-                          </div> --}}
-                        {{-- </td> --}}
-                        {{-- <td>
-                            <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                        </td> --}}
                     </tr>
                    
                     @endforeach       

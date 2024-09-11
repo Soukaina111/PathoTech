@@ -84,21 +84,9 @@ html, body {
       margin: 0 !important; 
       padding: 0 !important;
       
-      /* overflow:hidden; */
     }
 
-/* @page
-{
-    size: -1cm;
-    height:auto;
-    width:auto%;
-    margin: 50%;
-    
-} */
-/* @page{
-    size:15cm;
-  
-} */
+
 @page
 {
     
@@ -106,17 +94,9 @@ html, body {
     height:100vh;
     width:auto;
     margin: 0%;
-    
 }
-
-
 }
-
-
     </style>
-       
-      
-
     </div>
 
 @endsection

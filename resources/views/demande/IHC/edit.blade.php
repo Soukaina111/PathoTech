@@ -45,12 +45,7 @@
                 <label for="description" class="col-sm-2 col-form-label">Panel Marquage </label>
                 <div class="col-sm-10" >
                     <select id="panel" class="form-control panel"  name="panel_marquage[]" multiple="multiple" style="width: 100%;"   >
-                        {{-- <option value="{{ old('panel_marquage') }}"  selected > {{ old('panel_marquage') }}</option> --}}
-                         {{-- <input class="form-control" name="Panel_marquage" value="{{ $demande->Panel_Marquage }}"> --}}
-                        {{-- <input class="form-control"  >  --}}
-                        {{-- <datalist id="datalistOptions"  class="text-center"> --}}
                         <option value="{{ $demande->Panel_Marquage}}" selected style="display:none">{{ $demande->Panel_Marquage}}</option>
-
                         <option value="ACE">ACE</option>
                         <option value="actine muscle lisse">actine muscle lisse</option>
                         <option value="ALK"> ALK</option>

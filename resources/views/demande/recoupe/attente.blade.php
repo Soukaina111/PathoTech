@@ -1,14 +1,7 @@
-<!-- index.html -->
-
-
 @extends('adminlte::page')
-
 @section('title', 'Recoupe')
-
 @section('content_header')
-
 @stop
-
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
@@ -294,12 +287,6 @@ function printChecked() {
 </script>
 @endsection
 @stop
-
-
-
-
-
-
 
 
 

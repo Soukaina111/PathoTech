@@ -3,7 +3,6 @@
 @section('title', 'Edit Recoupe')
 
 @section('content_header')
-
     <h1>Edit Recoupe</h1>
 
 @stop

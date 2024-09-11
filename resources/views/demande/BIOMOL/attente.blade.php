@@ -1,5 +1,3 @@
-<!-- index.html -->
-
 
 @extends('adminlte::page')
 

@@ -1,19 +1,7 @@
-
 @extends('adminlte::page')
-
 @section('title', 'Recoupe')
-
 @section('content_header')
-
-
-
-
 @stop
-
-
-
-
-
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
@@ -177,7 +165,6 @@ $(document).ready(function(){
                 <thead>
                    
                     <tr>
-                        {{-- @if ((Auth::user()->role == 'Medecin')) --}}
                     
                         <th>Référence Bloc </th>
                         <th>Type</th>

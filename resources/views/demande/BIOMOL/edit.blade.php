@@ -90,21 +90,15 @@
             <button class="btn btn-primary" type="submit" method="post"> Modifier </button>
         </form>
     </div>
-
 @endsection
 @section('js')
 <script>
     $(document).ready(function() {
         $('#tests').select2({
             theme: "classic"
-            
-
         });
-        
     });
    
-   
-
 </script>
 
 
