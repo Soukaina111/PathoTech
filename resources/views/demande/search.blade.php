@@ -4,8 +4,6 @@
 
 @section('content_header')
 
-
-
 @stop
 
 @section('content')
@@ -225,10 +223,5 @@
         $(".checkboxclass").prop('checked',$(this).prop('checked'));
     });
 }); 
-
-
-
-
-
 </script>
 @endsection

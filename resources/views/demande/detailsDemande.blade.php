@@ -10,16 +10,12 @@
  <h3>{{ $demandes->Type_D }} </h3>
  <br>
 
-
 <div>
     @if($demandes->Type_D=='Recoupe')
     <div class="container mt-5">
         <div class="pull-right">
             <a class="btn btn-success" href="{{ route('M_Demandes') }}">Retour </a>
         </div>
-        {{-- <form action="{{ route('RECOUPE.update', $demande->id) }}" method="post"> --}}
-
-        
             <div class="row mb-3">
                 <label for="numeroAnapath" class="col-sm-2 col-form-label">Référence Bloc</label>
                 <div class="col-sm-10">
@@ -59,8 +55,6 @@
                     <input type="date" class="form-control" name="date" value="{{ $demande->Date_Demande }}" readonly>
                 </div>
             </div>
-           
-           
     </div>
     @elseif($demandes->Type_D=='IHC')
     <div class="container mt-5">
@@ -77,7 +71,6 @@
                         value="{{ $demande->Reference_Bloc }}" disabled>
                 </div>
             </div>
-           
             <div class="row mb-3">
                 <label for="description" class="col-sm-2 col-form-label">Panel Marquage </label>
                 <div class="col-sm-10">
@@ -126,8 +119,6 @@
         </div>
     </div>
 
-
-
    @elseif($demandes->Type=='Coloration')
 
    <div class="row mb-3">
@@ -167,9 +158,6 @@
 .hide-from-printer{  display:none; }
                 }
 </style>
-   
-
 </div>
 
- 
 @endsection
