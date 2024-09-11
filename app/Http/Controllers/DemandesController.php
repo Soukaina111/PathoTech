@@ -15,14 +15,6 @@ use function PHPUnit\Framework\isEmpty;
 
 class DemandesController extends Controller
 {
- //new
-
-
-  
- //end
-
-
-
 
     public function search(Request $request)
     {
@@ -41,12 +33,7 @@ class DemandesController extends Controller
        
          return view('demande.search', compact('demandes'));
 
-      
-
-      
-       // $demandes = Demande::where('Reference_Bloc', $bloc)->paginate(10);
-
-       
+    
     }
 
     public function detailsDemandes(){
@@ -70,9 +57,9 @@ class DemandesController extends Controller
 
         $de->update();
         return redirect()->back();
-        
-        # code...
+     
     }
+
     public function destroy(Demande $de)
     {
         
@@ -86,19 +73,8 @@ class DemandesController extends Controller
 
     public function status(Demande $de)
     {
-        // $data = [
-        //     'Id_User' => auth()->user()->id,
-        // ];
-        // $demandes=$de::create($data);
-
-       // $de->put('Id_User',auth()->user()->id);
+       
         $de->Status = 'Validée';
-        //$de->Id_User=auth()->user()->id;
-        //$user = Auth::user()->id;
-
-        //$user = Auth::user();
-        // $de->where('Status', '=', 'Validée')
-        //     ->update(['Id_User' => auth()->user()->id]);
         $de->update(); 
         
        
@@ -149,7 +125,6 @@ class DemandesController extends Controller
 
         if ($de->Type_D == 'Recoupe') {
             return view('demande.recoupe.show', compact('demande'));
-            //return redirect()->route('RECOUPE.show');
         }
         if ($de->Type_D == 'Coloration') {
             return redirect()->route('COLORATION.show');
@@ -195,20 +170,13 @@ class DemandesController extends Controller
 
 
 
-
-
-    //Recoupe
-
-
-
-
+    // RECOUPE FUNCTIONS
 
     public function index_RECOUPE()
     {
         $demandes = Demande::where('type_D', '=', 'Recoupe')->orderBy('id', 'desc')->paginate(10);
         return view('demande.recoupe.index', compact('demandes'));
     }
-
 
     public function create_RECOUPE()
     {
@@ -234,8 +202,6 @@ class DemandesController extends Controller
                 'nombre_recoupe.required' => 'Champ obligatoire'
             ]
         );
-
-
         $data = [
 
             'Reference_Bloc' => $request->Reference_Bloc,
@@ -248,7 +214,6 @@ class DemandesController extends Controller
             'Date_Demande' => $request->Date_Demande,
 
         ];
-
 
         $demandes = Demande::create($data);
 
@@ -326,7 +291,7 @@ class DemandesController extends Controller
 
     }
 
-    //COLOARTION FUNCTIONS
+    // COLORATION FUNCTIONS
 
 
     public function index_COLORATION()
@@ -346,8 +311,6 @@ class DemandesController extends Controller
 
         return view('demande.coloration.edit', compact('demande'));
     }
-
-
 
     public function store_COLORATION(Request $request)
     {
@@ -441,6 +404,7 @@ class DemandesController extends Controller
     }
 
     //BIOMOL FUNCTIONS
+
     public function index_BIOMOL()
     {
         $demandes = Demande::where('type_D', '=', 'Biologie Moléculaire')->orderBy('id', 'desc')->paginate(10);
@@ -667,8 +631,6 @@ class DemandesController extends Controller
         $id = $bloc->id;
 
         $demandes = Demande::where('Id_Bloc', $id)->where('Type_D', 'IHC')->paginate(10);
-
-        //dd($demandes);
 
         return view('demande.IHC.search', compact('demandes'));
     }
