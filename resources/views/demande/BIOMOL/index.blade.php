@@ -1,19 +1,7 @@
-
 @extends('adminlte::page')
-
 @section('title', 'Biologie Moléculaire')
-
 @section('content_header')
-
-
-
-
 @stop
-
-
-
-
-
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
