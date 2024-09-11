@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('demandes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('Id_Bloc');
             $table->foreignId('Id_User');
             $table->string('Type_D');
             $table->string('Status')->default('En attente');
@@ -27,7 +26,6 @@ return new class extends Migration
             $table->string('Panel_Marquage')->nullable();
             $table->timestamps();
 
-            $table->foreign('Id_Bloc')->references('id')->on('blocs')->cascadeOnDelete()->cascadeOnUpdate();
             $table->foreign('Id_User')->references('id')->on('users')->cascadeOnDelete()->cascadeOnUpdate();
         });
     }
