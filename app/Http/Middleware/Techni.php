@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
+// Lab Technicien Middleware Class
 class Techni
 {
     /**
