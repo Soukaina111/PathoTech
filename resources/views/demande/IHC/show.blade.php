@@ -1,9 +1,6 @@
 @extends('adminlte::page')
-
 @section('title', 'Détails IHC')
-
 @section('content_header')
-
 @stop
 
 @section('content')

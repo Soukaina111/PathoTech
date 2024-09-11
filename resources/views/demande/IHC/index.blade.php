@@ -1,15 +1,7 @@
-
 @extends('adminlte::page')
-
 @section('title', 'IHC')
-
 @section('content_header')
-
-
 @stop
-
-
-
 @section('content')
 <!DOCTYPE html>
 <html lang="en">

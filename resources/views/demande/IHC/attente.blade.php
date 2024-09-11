@@ -1,8 +1,4 @@
-<!-- index.html -->
-
-
 @extends('adminlte::page')
-
 @section('title', 'IHC')
 
 @section('content_header')

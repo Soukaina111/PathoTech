@@ -1,16 +1,8 @@
-
-
 @extends('adminlte::page')
-
-
-
 @section('title', 'Ajouter IHC')
-
 @section('content_header')
 
-
 @stop
-
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
