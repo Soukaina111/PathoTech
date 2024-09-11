@@ -1,6 +1,3 @@
-<!-- index.html -->
-
-
 @extends('adminlte::page')
 
 @section('title', 'COLORATION SPECIALE')

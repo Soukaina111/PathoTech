@@ -34,21 +34,6 @@
                                 <div class="form-group " width="100%">
                                     <label for="Reference_Bloc">Référence Bloc</label>
                                     <input type="text"  name =" Reference_Bloc" class="form-control">
-                                    {{-- <select id="id_bloc" class="form-control" name="id_bloc"> --}}
-
-
-                                        {{-- <option value="">Choose...</option>
-                                        @if (count($blocs))
-                                            @foreach ($blocs as $bloc)
-                                                <option value="{{ $bloc->id }}" name="id_bloc"
-                                                    {{ old('id_bloc') && old('id_bloc') == $bloc->id ? 'selected' : '' }}>
-                                                    {{ $bloc->Reference_Bloc }}</option>
-                                            @endforeach
-                                        @endif --}}
-
-
-                                   
-
                                     @if ($errors->any('Reference_Bloc'))
                                         <span class="text-danger">{{ $errors->first('Reference_Bloc') }}</span>
                                     @endif

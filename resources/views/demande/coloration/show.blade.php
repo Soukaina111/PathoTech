@@ -1,11 +1,7 @@
 @extends('adminlte::page')
-
 @section('title', 'Détails COLORATION SPECIALE')
-
 @section('content_header')
-
 @stop
-
 @section('content')
 @section('content')
 <html>

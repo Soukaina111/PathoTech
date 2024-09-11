@@ -5,7 +5,6 @@
 @section('content')
     <!DOCTYPE html>
     <html lang="en">
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +22,6 @@
                 background: #f5f5f5;
                 font-family: 'Roboto', sans-serif;
             }
-
             .status {
                 color: #FFC107;
                 font-size: 18px;

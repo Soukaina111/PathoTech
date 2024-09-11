@@ -1,13 +1,8 @@
 @extends('adminlte::page')
-
 @section('title', 'Edit Coloration')
-
 @section('content_header')
-
     <h1>Edit Coloration</h1>
-
 @stop
-
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
