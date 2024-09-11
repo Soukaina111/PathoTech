@@ -32,7 +32,7 @@ Route::get('/bienvenue', function () {
 Auth::routes();
 
 
-//Accueil
+//
 
 Route::get('/Prelevements', [App\Http\Controllers\PrelevementsController::class, 'all'])->name('all')->middleware('auth');
 Route::get('/Prelevements/search', [App\Http\Controllers\PrelevementsController::class, 'search'])->name('Prelevement.search')->middleware('auth');
