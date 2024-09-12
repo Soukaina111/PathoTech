@@ -22,34 +22,28 @@
                 background: #f5f5f5;
                 font-family: 'Roboto', sans-serif;
             }
-
             .status {
                 color: #FFC107;
                 font-size: 18px;
             }
-
             .valide {
                 color: #33cc33;
                 font-size: 18px;
             }
-
             .table-responsive {
                 margin: 30px 0;
             }
-
             .table-wrapper {
                 min-width: 1000px;
                 background: #fff;
                 padding: 20px;
                 box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
             }
-
             .table-title {
                 padding-bottom: 10px;
                 margin: 0 0 10px;
                 min-width: 100%;
             }
-
             .table-title h2 {
                 margin: 8px 0 0;
                 font-size: 22px;

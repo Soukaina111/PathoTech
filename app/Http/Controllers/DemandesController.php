@@ -635,16 +635,12 @@ class DemandesController extends Controller
         return view('demande.IHC.search', compact('demandes'));
     }
 
-
-
-
     public function attente_IHC()
     {
         $demandes = Demande::where('type_D', '=', 'IHC')->where('Status', '!=' ,'Validée')->orderBy('Id_User', 'asc')->paginate(10);
         return view('demande.IHC.attente', compact('demandes'));
 
     }
-
 
     public function valide_IHC()
     {
