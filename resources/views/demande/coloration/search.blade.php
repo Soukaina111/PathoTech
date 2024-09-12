@@ -26,7 +26,6 @@
                 color: #FFC107;
                 font-size: 18px;
             }
-
             .valide {
                 color: #33cc33;
                 font-size: 18px;
@@ -48,12 +47,10 @@
                 margin: 0 0 10px;
                 min-width: 100%;
             }
-
             .table-title h2 {
                 margin: 8px 0 0;
                 font-size: 22px;
             }
-
             .search-box {
                 position: relative;
                 display: flex;

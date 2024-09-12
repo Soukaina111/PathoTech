@@ -67,10 +67,6 @@
                             <option value="Autres">Autres</option>
                             
                 </select>
-
-                {{-- <div class="col-sm-10">
-                    <input type="text" class="form-control" name="type_coloration" value="{{ $demande->Type_Coloration }}">
-                </div> --}}
             </div>
         </div>
             <div class="row mb-3">
@@ -96,9 +92,6 @@
         });
         
     });
-   
-   
-
 </script>
 
 
