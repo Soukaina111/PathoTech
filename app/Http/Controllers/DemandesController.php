@@ -161,11 +161,6 @@ class DemandesController extends Controller
 
         return redirect()->back();
       
-
-
-
-        
-    
         }
 
 
@@ -291,6 +286,7 @@ class DemandesController extends Controller
 
     }
 
+    
     // COLORATION FUNCTIONS
 
 
