@@ -286,10 +286,7 @@ class DemandesController extends Controller
 
     }
 
-    
     // COLORATION FUNCTIONS
-
-
     public function index_COLORATION()
     {
         $demandes = Demande::where('type_D', '=', 'coloration')->orderBy('id', 'desc')->paginate(10);
@@ -362,7 +359,6 @@ class DemandesController extends Controller
         $de->delete();
         return redirect()->route('M_Demandes')->with('deleted', 'Demande(s) de Coloration supprimée(s)');
     }
-
 
     public function show_COLORATION($id)
     {
