@@ -1,6 +1,4 @@
 <?php
-
-
 return [
 
     /*
@@ -15,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'EASYPATH',
+    'title' => 'TECHNOPATH',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -46,7 +44,7 @@ return [
     |
     */
 
-    'logo' => '<b>EASYPATH</b>',
+    'logo' => '<b>TECHNOPATH</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -254,50 +252,6 @@ return [
         ],
 
 
-
-
-
-        [
-            'text' => 'ACCUEIL',
-            'url'  => '/Prelevements',
-        ],
-        ['header' => 'ESPACE MACROSCOPIQUE  '],
-
-        [
-            'text'       => 'Piéces Opératoires',
-            'icon_color' => 'white',
-            'url'        => '/Po',
-        ],
-        [
-            'text'       => 'Reprélèvements',
-            'icon_color' => 'pink',
-            'url'        => '/Repr',
-        ],
-        [
-            'text'       => 'Extemporanée',
-            'icon_color' => 'white',
-            'url'        => '/Extp',
-        ],
-        [
-            'text'       => 'Suite Extemporanée',
-            'icon_color' => 'pink',
-            'url'        => '/SE',
-        ],
-    
-
-        
-            /*  [
-            'text'       => 'Laryngectomie',
-            'icon_color' => 'pink',
-            'url'        => '/Larynx',],
-                 [
-            'text'       => 'Rétinoblastome',
-            'icon_color' => 'white',
-            'url'        => '/Retino',],
-     */
-
-      
-
         ['header' => 'ESPACE  TECHNIQUE'],
 
         [
@@ -327,27 +281,7 @@ return [
             'url'        => '/BIOMOL',
         ],
         
-
-        // [
-        //     'text'    => 'Gestion Blocs',
-        //     'icon_color' => 'white',
-        //     'url'     => '/Blocs',
-        //     'submenu' => [
-        //         [
-        //             'text' => 'Blocs',
-        //             'icon_color' => 'red',
-        //             'url' => '/Blocs'
-        //         ],
-        //         [
-        //             'text' => 'Sous-Blocs',
-        //             'icon_color' => 'lightblue',
-        //             'url' => '/Sous-Blocs'
-        //         ],
-               
-        //     ],
-        // ],
      
-
 
     ],
 
