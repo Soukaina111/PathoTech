@@ -16,6 +16,6 @@ PathoTech is a web-based application designed to streamline workflows in patholo
 - **Frontend:** HTML, CSS, Bootstrap
 - **Backend:** Laravel (PHP)
 - **Database:** MySQL
-- **Control Version :** Github
+- **Version Control:** Github
 
 
