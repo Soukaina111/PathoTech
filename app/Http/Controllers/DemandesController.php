@@ -431,7 +431,6 @@ class DemandesController extends Controller
                 'Reference_Bloc.required' => 'Veuillez saisir une référence',
                 'tests.required' => 'Champ obligatoire',
             ],
-
         );
         $data = [
 
