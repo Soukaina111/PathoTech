@@ -46,7 +46,6 @@ Route::get('/demande/recoupe/valide', [App\Http\Controllers\DemandesController::
 Route::get('/demande/recoupe/attente', [App\Http\Controllers\DemandesController::class, 'attente_RECOUPE'])->name('RECOUPE.attente')->middleware('auth');
 
 //COLORATION ROUTES
-
 Route::get('/COLORATION', [App\Http\Controllers\DemandesController::class, 'index_COLORATION'])->name('COLORATION.index')->middleware('auth');
 Route::get('/demande/coloration/create', [App\Http\Controllers\DemandesController::class, 'create_COLORATION'])->name('COLORATION.create')->middleware(['auth', 'tech']);
 Route::post('/demande/coloration/store', [App\Http\Controllers\DemandesController::class, 'store_COLORATION'])->name('COLORATION.store')->middleware(['auth', 'tech']);
@@ -87,6 +86,5 @@ Route::get('/Demandes/search/recoupe', [App\Http\Controllers\DemandesController:
 Route::get('/Demandes/search/coloration', [App\Http\Controllers\DemandesController::class, 'search_c'])->name('demandes.search_c')->middleware('auth');
 Route::get('/Demandes/search/ihc', [App\Http\Controllers\DemandesController::class, 'search_i'])->name('demandes.search_i')->middleware('auth');
 Route::any('/Demandes/{de}/delete', [App\Http\Controllers\DemandesController::class, 'destroy'])->name('demandes.destroy')->middleware('auth');
-
 //USERS
 Route::get('/User/create', [App\Http\Controllers\UsersController::class, 'create'])->name('User.create');
