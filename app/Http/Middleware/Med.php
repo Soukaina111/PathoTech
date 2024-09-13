@@ -5,7 +5,6 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-
 // Medecin Middleware Class
 class Med
 {
