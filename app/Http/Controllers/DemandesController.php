@@ -526,7 +526,6 @@ class DemandesController extends Controller
 
     public function show_IHC($id)
     {
-
         $demande = Demande::find($id);
 
         return view('demande.IHC.show', compact('demande'));
