@@ -539,10 +539,8 @@ class DemandesController extends Controller
 
 
 
-
     public function store_IHC(Request $request)
     {
-
 
         $request->validate(
             [
