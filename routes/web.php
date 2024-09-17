@@ -55,8 +55,8 @@ Route::put('demande/coloration/{prv}/update', [App\Http\Controllers\DemandesCont
 Route::any('/demande/coloration/{de}/destroy', [App\Http\Controllers\DemandesController::class, 'destroy_COLORATION'])->name('COLORATION.destroy')->middleware(['auth', 'tech']);
 Route::get('/demande/coloration/valide', [App\Http\Controllers\DemandesController::class, 'valide_COLORATION'])->name('COLORATION.valide')->middleware('auth');
 Route::get('/demande/coloration/attente', [App\Http\Controllers\DemandesController::class, 'attente_COLORATION'])->name('COLORATION.attente')->middleware('auth');
-//IHC ROUTES
 
+//IHC ROUTES
 Route::get('/IHC', [App\Http\Controllers\DemandesController::class, 'index_IHC'])->name('IHC.index')->middleware('auth');
 Route::get('demande/IHC/create', [App\Http\Controllers\DemandesController::class, 'create_IHC'])->name('IHC.create')->middleware(['auth', 'tech']);
 Route::post('/demande/IHC/store', [App\Http\Controllers\DemandesController::class, 'store_IHC'])->name('IHC.store')->middleware(['auth', 'tech']);
@@ -78,7 +78,7 @@ Route::any('/demande/BIOMOL/{de}/destroy', [App\Http\Controllers\DemandesControl
 Route::get('/demande/BIOMOL/valide', [App\Http\Controllers\DemandesController::class, 'valide_BIOMOL'])->name('BIOMOL.valide')->middleware('auth');
 Route::get('/demande/BIOMOL/attente', [App\Http\Controllers\DemandesController::class, 'attente_BIOMOL'])->name('BIOMOL.attente')->middleware('auth');
 
-//DEMANDES ROUTES
+//DEMANDES/Requests ROUTES
 Route::get('/Mes_demandes/', [App\Http\Controllers\DemandesController::class, 'mine'])->name('M_Demandes')->middleware(['auth', 'tech']);
 Route::get('/Demandes/search', [App\Http\Controllers\DemandesController::class, 'search'])->name('demandes.search')->middleware('auth');
 Route::any('/demande/{de}', [App\Http\Controllers\DemandesController::class, 'status'])->name('status.update')->middleware('auth');
@@ -86,5 +86,3 @@ Route::get('/Demandes/search/recoupe', [App\Http\Controllers\DemandesController:
 Route::get('/Demandes/search/coloration', [App\Http\Controllers\DemandesController::class, 'search_c'])->name('demandes.search_c')->middleware('auth');
 Route::get('/Demandes/search/ihc', [App\Http\Controllers\DemandesController::class, 'search_i'])->name('demandes.search_i')->middleware('auth');
 Route::any('/Demandes/{de}/delete', [App\Http\Controllers\DemandesController::class, 'destroy'])->name('demandes.destroy')->middleware('auth');
-//USERS
-Route::get('/User/create', [App\Http\Controllers\UsersController::class, 'create'])->name('User.create');
